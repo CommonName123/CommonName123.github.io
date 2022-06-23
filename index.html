@@ -1,1 +1,53 @@
-Hellp World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="neons col-12">
+            <h1><em>coming soon</em></h1>
+        </div>
+    </div>
+</div>
+</body>
+<style lang="scss">
+    @import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Codystar';
+        background: black;
+    }
+
+    .neons {
+        margin-top: 10rem;
+        text-align: center;
+    }
+
+    .neons h1 {
+        font-size: 9rem;
+        text-align: center;
+        font-weight: bold;
+        -webkit-animation: glow 2s ease-in-out infinite alternate;
+        -moz-animation: glow 2s ease-in-out infinite alternate;
+        animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @-webkit-keyframes glow {
+        from {
+            color: #ffffff;
+            text-shadow: 0 0 10px #d723ff, 0 0 20px #d723ff, 0 0 30px #d723ff, 0 0 40px #d723ff, 0 0 50px #d723ff, 0 0 60px #d723ff, 0 0 70px #d723ff, 0 0 90px #d723ff;
+        }
+
+        to {
+            color: #3b3737;
+            text-shadow: 0 0 20px #d723ff, 0 0 30px #d723ff, 0 0 40px #d723ff, 0 0 50px #d723ff, 0 0 60px #d723ff, 0 0 70px #d723ff, 0 0 80px #d723ff, 0 1 90px #d723ff;
+        }
+    }
+</style>
+</html>
